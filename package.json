@@ -6,7 +6,9 @@
   "dependencies": {
     "sass": "^1.23.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  },
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css"

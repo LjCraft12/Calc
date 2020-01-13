@@ -1,0 +1,41 @@
+#container {
+  -webkit-clip-path: polygon(15% 0, 85% 0, 80% 41%, 80% 95%, 20% 95%, 20% 41%);
+  clip-path: polygon(15% 0, 85% 0, 80% 41%, 80% 95%, 20% 95%, 20% 41%);
+  //border: 1px solid darkblue;
+  border-radius: 30% 30% 45% 45%;
+  height: 170px;
+  width: 130px;
+}
+
+#screen-container {
+  -webkit-clip-path: polygon(10% 30%, 90% 30%, 100% 100%, 0 100%);
+  clip-path: polygon(0% 30%, 100% 30%, 100% 100%, 0 100%);
+  //border: 1px solid lightslategray;
+  border-radius: 50px 50px 0px 0px;
+  height: 65px;
+  width: 75px;
+  transform: translate(37%, -25%);
+}
+
+#solar {
+  height: 8px;
+  width: 30px;
+  transform: translate(75%, 270%);
+  //border: 1px solid orangered;
+}
+
+.border-right {
+  border-right: 0.25px solid grey !important;
+}
+
+#logo {
+  height: 8px;
+  width: 60px;
+  transform: translate(50%, -640%);
+  &-text {
+    font-size: 3px;
+  }
+  &-model {
+    font-size: 5px;
+  }
+}

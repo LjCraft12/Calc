@@ -10,35 +10,37 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Bootstrap Calculator</title>
   </head>
 
   <body>
-    <div class="d-flex h-100 w-50 border border-dark rounded bg-primary">
-      <div class="align-self-center m-auto h-25 w-75 bg-secondary rounded-top">
-        <!--need spacing above "solar"-->
-        <div
-          id="solar"
-          class="align-self-center p-2 m-auto w-50 h-25 bg-dark rounded-top"
-        ></div>
-
-        <div id="logo" class="h-25 w-50 p-3">
-          <!--make img bg color match containter color-->
-          <img src="img/Logo.PNG" alt="" class="img-fluid rounded" />
-          <div
-            id="model"
-            class="align-self-end text-uppercase font-weight-bold "
-          >
-            ti-30xiis
-            <!--need to align text to the right of the logo-->
+    <div id="container" class="bg-primary">
+      <div id="screen-container" class="bg-secondary">
+        <div id="solar" class="row align-items-stretch no-gutters bg-dark rounded-top">
+          <!--<div id="solar-row" class="row align-items-center no-gutters">-->
+            <div class="col-2 border-right"></div>
+            <div class="col-4 border-right"></div>
+            <div class="col-4 border-right"></div>
+            <div class="col-2"></div>
           </div>
         </div>
 
-        <div
-          id="screen"
-          class="align-self-center rounded h-25 w-75 p-4 m-auto bg-info "
-        ></div>
+        <div id="logo">
+          <div id="logo-text" class="align-self-start text-uppercase font-weight-bold ">
+            texas instruments
+          </div>
+          <div id="logo-model" class="align-self-end text-uppercase font-weight-bold ">
+            ti-30xiis
+          </div>
+        </div>
+
+        <div id="screen" class="align-self-center rounded h-25 w-75 p-4 m-auto bg-info "></div>
       </div>
 
       <div id="buttons"></div>
